@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://character07.fbx" type="PackedScene" id=2]
+[ext_resource path="res://matPlayer.tres" type="Material" id=3]
+
+[node name="character07" instance=ExtResource( 2 )]
+
+[node name="Armature" parent="." index="0"]
+transform = Transform( 100, 0, 0, 0, -1.19209e-05, 100, 0, -100, -1.19209e-05, 0, 0, 0 )
+
+[node name="mesh_player" parent="Armature" index="1"]
+material/0 = ExtResource( 3 )
